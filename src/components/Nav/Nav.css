@@ -1,0 +1,53 @@
+:root {
+	--cl-gradient-1: #7303c0;
+	--cl-gradient-2: #3f5efb;
+	--cl-gradient-3: #fc466b;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: max-content;
+	display: block;
+	padding: 0.5rem 1rem;
+	position: fixed;
+	left: 50%;
+	z-index: 2;
+	transform: translateX(-50%);
+	bottom: 2rem;
+	display: flex;
+	gap: 0.5rem;
+	border-radius: 3rem;
+	-webkit-border-radius: 3rem;
+	-moz-border-radius: 3rem;
+	-ms-border-radius: 3rem;
+	-o-border-radius: 3rem;
+	backdrop-filter: blur(15px);
+}
+
+nav a {
+    background-color: transparent;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    color: var(--color-primary-variant);
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+	background-color: var(--color-primary-variant);
+	color: var(--color-secondary);
+}
+
+nav a.active {
+	background-image: var(--color-rando-partTwo);
+	color: var(--color-secondary);
+}
